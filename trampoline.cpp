@@ -22,7 +22,7 @@ public:
 
     static void free(void *ptr) {
         *(void **)ptr = memory_ptr;
-        memory_ptr = (char **)ptr;
+        memory_ptr = (void **)ptr;
     }
 };
 
